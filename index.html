@@ -1,0 +1,552 @@
+<!--
+  1337Syndicate
+  Developer Docs and Pentesters...
+-->
+<!DOCTYPE html>
+<html class="no-js" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:image" content="https://i.ibb.co/Jvg0MJ5/docs.png">
+    <meta name="description" content="Developer Docs and Pentesters">
+    <meta name="author" content="1337Syndicate">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="docs.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="docs.png"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/stylesheet/pages/pages.css"
+    />
+    <link rel="stylesheet" href="./assets/tailwind/tailwind.css" />
+    <title>1337Syndicate - Developer Docs and Pentesters</title>
+  </head>
+  <body class="text-blueGray-700 antialiased">
+    <nav
+      class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+            href="./index.html"
+            >1337Syndicate</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                class="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://github.com/1337Syndicate/Docs/wiki"
+                ><i
+                  class="text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2"
+                ></i>
+                Docs</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="flex flex-col lg:flex-row list-none lg:ml-auto items-center"
+          >
+            <li class="inline-block relative">
+              <a
+                class="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pages"
+                onclick="openDropdown(event,'demo-pages-dropdown')"
+              >
+                Pages
+              </a>
+              <div
+                class="hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48 navbar-popper"
+                id="demo-pages-dropdown"
+              >
+                <span
+                  class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
+                >
+                  Docs
+                </span>
+                <a
+                  href="https://github.com/1337Syndicate/Docs/wiki/Docs-React"
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                >
+                  React
+                </a>
+                <a
+                  href="https://github.com/1337Syndicate/Docs/wiki/Docs-Django"
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                >
+                  Django
+                </a>
+                <a
+                  href="https://github.com/1337Syndicate/Docs/wiki/Docs-Git"
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                >
+                  Git
+                </a>
+                <a
+                  href="https://github.com/1337Syndicate/Docs/wiki/Docs-MongoDB"
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                >
+                  MongoDB
+                </a>
+                <div
+                  class="h-0 mx-4 my-2 border border-solid border-blueGray-100"
+                ></div>
+                <span
+                  class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
+                >
+                  About
+                </span>
+                <a
+                  href="./pages/1337syndicate.html"
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                >
+                  1337Syndicate
+                </a>
+                <a
+                  href="./pages/writer.html"
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                >
+                  Docs Writer
+                </a>
+                <div
+                  class="h-0 mx-4 my-2 border border-solid border-blueGray-100"
+                ></div>
+                <span
+                  class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
+                >
+                  Membership
+                </span>
+                <a
+                  href="./pages/member.html"
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                >
+                  Member
+                </a>
+                <div
+                  class="h-0 mx-4 my-2 border border-solid border-blueGray-100"
+                ></div>
+                <span
+                  class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400"
+                >
+                  Partnership
+                </span>
+                <a
+                  href="./pages/partner.html"
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+                >
+                  Partner
+                </a>
+              </div>
+            </li>
+            <li class="flex items-center">
+              <a
+                class="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.instagram.com/1337syndicate.id/"
+                target="_blank"
+                ><i
+                  class="text-blueGray-400 fab fa-instagram text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Instagram</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://github.com/1337Syndicate"
+                target="_blank"
+                ><i
+                  class="text-blueGray-400 fab fa-github text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">GitHub</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <button class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                <a href="https://roadmap.sh/">Developer Roadmaps</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="header relative pt-16 items-center flex h-screen max-h-860-px"
+    >
+      <div class="container mx-auto items-center flex flex-wrap">
+        <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+          <div class="pt-32 sm:pt-0">
+            <h2 class="font-semibold text-4xl text-blueGray-600">
+              1337Syndicate - Developer Docs and Pentesters.
+            </h2>
+            <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+              1337Syndicate adalah komunitas IT yang bergerak di bidang developer dan penetration testing.
+              Didirikan pada 03 Maret 2021, 1337Syndicate secara aktif melakukan riset tentang suatu pengembangan dan pengujian sistem keamanan.
+            </p>
+            <div class="mt-12">
+              <a
+                href="https://github.com/1337Syndicate/Docs/wiki"
+                target="_blank"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-pink-500 active:bg-pink-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              >
+                Read Docs
+              </a>
+              <a
+                href="https://chat.whatsapp.com/HOglon8iEkm4iFEIQ4VqSE"
+                class="get-started ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                target="_blank"
+              >
+                Discuss with us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
+        src="./pages/docs/00.png"
+        alt="..."
+      />
+    </section>
+
+    <section class="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
+      <div
+        class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
+        style="transform: translateZ(0)"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-blueGray-100 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+
+      <div class="justify-center text-center flex flex-wrap mt-24">
+        <div class="w-full md:w-6/12 px-12 md:px-4">
+          <h2 class="font-semibold text-4xl">Docs</h2>
+          <p class="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
+            Didokumentasi oleh 1337Syndicate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block relative z-1 bg-blueGray-600">
+      <div class="container mx-auto">
+        <div class="justify-center flex flex-wrap">
+          <div class="w-full lg:w-12/12 px-4 -mt-24">
+            <div class="flex flex-wrap">
+              <div class="w-full lg:w-4/12 px-4">
+                <h5 class="text-xl font-semibold pb-4 text-center">
+                  React
+                </h5>
+                <a href="https://github.com/1337Syndicate/Docs/wiki/Docs-React">
+                  <div
+                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
+                  >
+                    <img
+                      alt="..."
+                      class="align-middle border-none max-w-full h-auto rounded-lg"
+                      src="./pages/docs/react.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div class="w-full lg:w-4/12 px-4">
+                <h5 class="text-xl font-semibold pb-4 text-center">
+                  Django
+                </h5>
+                <a href="https://github.com/1337Syndicate/Docs/wiki/Docs-Django">
+                  <div
+                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
+                  >
+                    <img
+                      alt="..."
+                      class="align-middle border-none max-w-full h-auto rounded-lg"
+                      src="./pages/docs/django.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <div class="w-full lg:w-4/12 px-4">
+                <h5 class="text-xl font-semibold pb-4 text-center">
+                  MongoDB
+                </h5>
+                <a href="https://github.com/1337Syndicate/Docs/wiki/Docs-MongoDB">
+                  <div
+                    class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
+                  >
+                    <img
+                      alt="..."
+                      class="align-middle border-none max-w-full h-auto rounded-lg"
+                      src="./pages/docs/mongodb.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-blueGray-600 overflow-hidden">
+    </section>
+
+    <section class="pb-16 bg-blueGray-200 relative pt-32">
+      <div
+        class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
+        style="transform: translateZ(0)"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-blueGray-200 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+
+      <div class="container mx-auto">
+        <div
+          class="flex flex-wrap justify-center bg-white shadow-xl rounded-lg -mt-64 py-16 px-12 relative z-10"
+        >
+          <div class="w-full text-center lg:w-8/12">
+            <p class="text-4xl text-center">
+              <span role="img" aria-label="love"> 😍 </span>
+            </p>
+            <h3 class="font-semibold text-3xl">
+              Kamu Penggemar IT?
+              <br>
+              Yuk Bergabung Bersama Kami!
+            </h3>
+            <p class="text-blueGray-500 text-lg leading-relaxed mt-4 mb-4">
+              1337Syndicate adalah komunitas IT yang bergerak di bidang developer dan penetration testing. Didirikan pada 03 Maret 2021, 1337Syndicate secara aktif melakukan riset tentang suatu pengembangan dan pengujian sistem keamanan.
+            </p>
+            <div class="sm:block flex flex-col mt-10">
+              <a
+                href="https://github.com/1337Syndicate/Docs/wiki"
+                target="_blank"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-2 bg-pink-500 active:bg-pink-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              >
+                Read Docs
+              </a>
+              <a
+                href="https://chat.whatsapp.com/HOglon8iEkm4iFEIQ4VqSE"
+                target="_blank"
+                class="get-started sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              >
+                <span>Discuss with us</span>
+              </a>
+            </div>
+            <div class="text-center mt-16"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="relative bg-blueGray-200 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+        style="transform: translateZ(0)"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-blueGray-200 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap text-center lg:text-left">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">1337Syndicate</h4>
+            <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+              Developer Docs and Pentesters.
+            </h5>
+            <div class="mt-6 lg:mb-0 mb-6">
+              <button
+                class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-instagram"></i>
+              </button>
+              <button
+                class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+                >
+                  Useful Links
+                </span>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="./pages/1337syndicate.html"
+                    >
+                      About 1337Syndicate
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="./pages/writer.html"
+                    >
+                      About Docs Writer
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="https://github.com/1337Syndicate/Docs/wiki"
+                    >
+                      Docs
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="https://roadmap.sh/"
+                    >
+                      Developer Roadmaps
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+                >
+                  Other Resources
+                </span>
+                <ul class="list-unstyled">
+                  
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="#"
+                    >
+                      Terms & Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="#"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      href="https://www.instagram.com/1337syndicate.id/"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-blueGray-300" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-blueGray-500 font-semibold py-1">
+              Copyright © <span id="get-current-year"></span> Docs
+              by
+              <a
+                href="#"
+                class="text-blueGray-500 hover:text-blueGray-800"
+              >
+                1337Syndicate.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="popper.js"></script>
+  <script>
+    
+    (function () {
+      if (document.getElementById("get-current-year")) {
+        document.getElementById("get-current-year").innerHTML =
+          new Date().getFullYear();
+      }
+    })();
+    
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+    
+    function openDropdown(event, dropdownID) {
+      let element = event.target;
+      while (element.nodeName !== "A") {
+        element = element.parentNode;
+      }
+      Popper.createPopper(element, document.getElementById(dropdownID), {
+        placement: "bottom-start"
+      });
+      document.getElementById(dropdownID).classList.toggle("hidden");
+      document.getElementById(dropdownID).classList.toggle("block");
+    }
+  </script>
+</html>
