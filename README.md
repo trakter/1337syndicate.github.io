@@ -1,2 +1,1 @@
-# 1337syndicate.github.io
-Docs
+## **Developer Docs and Pentesters.**
